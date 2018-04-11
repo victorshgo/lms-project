@@ -59,7 +59,7 @@ nav {
 
 .menu ul li {
     display: inline;
-    margin-left: 5%;
+    margin: 0 2.5%;
 }
 
 .menu ul li a {
