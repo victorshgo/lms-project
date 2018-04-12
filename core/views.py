@@ -1,37 +1,61 @@
 from django.shortcuts import render
 
 def index(request):
-    return render(request, 'index.html')
+    context = {
+        "titulo": "Faculdade Impacta de Tecnologia"
+    }
+    return render(request, 'index.html', context)
 
 def sobre(request):
-    return render(request, 'sobre.html')
+    context = {
+        "titulo": "Sobre nós"
+    }
+    return render(request, 'sobre.html', context)
 
 def cursos(request):
-    return render(request, 'cursos.html')
+    context = {
+        "titulo": "Nossos cursos"
+    }
+    return render(request, 'cursos.html', context)
 
 def contato(request):
-    return render(request, 'contato.html')
+    context = {
+        "titulo": "Contato"
+    }
+    return render(request, 'contato.html', context)
 
 def login(request):
-    return render(request, 'login.html')
+    context = {
+        "titulo": "Área restrita"
+    }
+    return render(request, 'login.html', context)
 
 def disciplinaADS(request):
-    return render(request, 'disciplinaADS.html')
+    context = {
+        "titulo": "Análise e Desenvolvimento de Sistemas"
+    }
+    return render(request, 'disciplinaADS.html', context)
 
 def novaDisciplina(request):
-    return render(request, 'novaDisciplina.html')
+    context = {
+        "titulo": "Nova disciplina"
+    }
+    return render(request, 'novaDisciplina.html', context)
 
 def novoAluno(request):
-    return render(request, 'novoAluno.html')
+    context = {
+        "titulo": "Novo aluno"
+    }
+    return render(request, 'novoAluno.html', context)
 
 def novoCurso(request):
-    return render(request, 'novoCurso.html')
-    
-def detalhesDisciplina(request):
-    return render(request, 'detalhesDisciplina.html')
+    context = {
+        "titulo": "Novo curso"
+    }
+    return render(request, 'novoCurso.html', context)
 
 def matricula(request):
-    return render(request, 'matricula.html')
-
-def testeBase(request):
-    return render(request, 'testeBase.html')
+    context = {
+        "titulo": "Matricula"
+    }
+    return render(request, 'matricula.html', context)
