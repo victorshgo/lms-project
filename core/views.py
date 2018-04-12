@@ -32,3 +32,6 @@ def detalhesDisciplina(request):
 
 def matricula(request):
     return render(request, 'matricula.html')
+
+def testeBase(request):
+    return render(request, 'testeBase.html')

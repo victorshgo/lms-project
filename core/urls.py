@@ -27,5 +27,6 @@ urlpatterns = [
     path('novoAluno/', novoAluno),
     path('novoCurso/', novoCurso),
     path('detalhesDisciplina/', detalhesDisciplina),
-    path('matricula/', matricula)
+    path('matricula/', matricula),
+    path('testeBase/', testeBase)
 ]
